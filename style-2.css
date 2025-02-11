@@ -1,5 +1,12 @@
 
-
+.search-bar {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  transition: border-color 0.3s;
+}
 
 
 header {
@@ -93,4 +100,62 @@ header {
 .footer>p:nth-child(4):hover{
   color: chocolate;
 }
+@media screen and (min-width:300px) and (max-width:500px){
+  
+  .search-bar {
+    width: 550px;
+    font-size: 26px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    margin-left:0px ;
+}
 
+  .container{
+    display: grid;
+    font-size: 25px;
+    grid-template-columns: repeat(2,1fr);
+
+  }
+    /* list recipies */
+  .sub-con,.diet,.india-breakfast,.curries,.sweets{
+    display: grid;
+    font-size: 28px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+    width: 500px;
+  }
+  section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+   
+  .all-india-recipies{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+ }
+  li>a{
+    text-decoration: none;
+    font-size: 30px;
+
+  }
+  h2,h1{
+    width: 350px;
+
+  }
+/* footer tag */
+   
+.footer{
+  width: 500px;
+  text-align: center;
+}
+.footer>p:nth-child(4){
+  color:gray;
+}
+.footer>p:nth-child(1):hover,
+.footer>p:nth-child(2):hover,
+.footer>p:nth-child(3):hover,
+.footer>p:nth-child(4):hover{
+  color: chocolate;
+}
+}
